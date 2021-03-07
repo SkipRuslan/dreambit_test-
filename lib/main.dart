@@ -1,3 +1,4 @@
+import 'package:dreambit_test/modules/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
