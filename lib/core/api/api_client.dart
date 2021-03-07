@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:dreambit_test/models/image_entity.dart';
 
-
 class ApiClient {
   static const String baseUrl = "https://images-api.nasa.gov/";
   Dio dio = Dio();
@@ -18,7 +17,7 @@ class ApiClient {
       }
       return images;
     } else {
-      print(" ${response.data['message']}"); //????????????????????????
+      print(" ${response.data['message']}");
       throw Exception(response.data['message']);
     }
   }

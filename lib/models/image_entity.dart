@@ -1,9 +1,9 @@
 class ImageEntity {
   final String title;
   final String description;
-  final String image;
+  final String url;
 
-  ImageEntity(this.image, this.description, this.title);
+  ImageEntity(this.title, this.description, this.url);
 
   static ImageEntity fromJson(Map<String, dynamic> json) {
     return ImageEntity(
