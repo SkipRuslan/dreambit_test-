@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
+import 'package:dreambit_test/models/image_entity.dart';
 
-import 'imge_entity.dart';
 
 class ApiClient {
   static const String baseUrl = "https://images-api.nasa.gov/";
