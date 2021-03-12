@@ -6,6 +6,7 @@ import 'package:dreambit_test/modules/home/bloc/home_event.dart';
 import 'package:dreambit_test/modules/home/bloc/home_state.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
+  ImageRepository _imageRepository = ImageRepository();
   HomeBloc() : super(HomeInitialState());
 
   @override
@@ -16,7 +17,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       yield HomeInitialState();
 
       try {
-        List<ImageEntity> images = await ImageRepository.getImages();
+        List<ImageEntity> images = await _imageRepository.getImages();
         yield HomeLoadState(images);
       } catch (error) {
         print(" ${error.toString()}");

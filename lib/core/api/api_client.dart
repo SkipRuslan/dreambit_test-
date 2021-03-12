@@ -12,7 +12,7 @@ class ApiClient {
     if (code == 200) {
       List<ImageEntity> images = [];
       final data = response.data["collection"]["items"];
-      for (int i = 0; i < 100; ++i) {
+      for (int i = 0; i < data.lenght; ++i) {
         images.add(ImageEntity.fromJson(data[i]));
       }
       return images;

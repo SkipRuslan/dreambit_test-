@@ -11,7 +11,7 @@ class HomeLoadState extends Equatable implements HomeState {
   HomeLoadState(this.images);
 
   @override
-  List<Object> get props => throw UnimplementedError();
+  List<Object> get props => images;
 }
 
 class HomeErrorState implements HomeState {}
