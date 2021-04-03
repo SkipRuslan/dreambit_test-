@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
         key: _key,
         backgroundColor: Colors.black,
         appBar: AppBar(
-          backgroundColor: AppColors.idigo,
+          backgroundColor: Colors.red,
           title: Text(
             Strings.appBarTitle,
             style: TextStyle(color: Colors.white),
